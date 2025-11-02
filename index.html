@@ -578,11 +578,24 @@
         </script>
         <p class="hero-subtitle">Saya seorang <span class="highlight">Web Developer Profesional</span></p>
         <div class="cta-buttons">
-          <a href="portfolio.html" class="btn btn-primary">
-            Lihat Portfolio
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+          <a href="portfolio.html" class="btn btn-primary" style="position:relative; overflow:hidden;">
+            <span style="position:relative; z-index:2; display:flex; align-items:center; gap:0.5rem;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="margin-right:0.3rem;">
+                <circle cx="12" cy="12" r="10" stroke="url(#grad1)" stroke-width="2" fill="none" />
+                <defs>
+                  <linearGradient id="grad1" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00f2ff" />
+                    <stop offset="1" stop-color="#7b2fff" />
+                  </linearGradient>
+                </defs>
+                <path d="M10 8l4 4-4 4" stroke="url(#grad1)" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <span>Lihat Portfolio</span>
+            </span>
+            <span
+              style="position:absolute; inset:0; background:linear-gradient(90deg,rgba(0,242,255,0.08),rgba(123,47,255,0.08)); z-index:1; pointer-events:none;"></span>
           </a>
         </div>
       </div>
